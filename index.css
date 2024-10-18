@@ -1,0 +1,68 @@
+
+.weather-widget {
+    transition: background-image 0.5s ease;
+}
+
+.weather-widget.clear {
+    background-image: linear-gradient(to right bottom, #87CEEB, #4682B4);
+}
+
+.weather-widget.clouds {
+    background-image: linear-gradient(to right bottom, #708090, #2F4F4F);
+}
+
+.weather-widget.rain {
+    background-image: linear-gradient(to right bottom, #4682B4, #000080);
+}
+
+.loading {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.profile-avatar {
+    transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.05);
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .bg-white {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.dark-mode .text-gray-600 {
+    color: #d1d1d1;
+}
+
+.dark-mode .bg-gray-100 {
+    background-color: #333333;
+}
